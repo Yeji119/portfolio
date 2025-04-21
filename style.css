@@ -27,7 +27,7 @@ nav ul { /*앵커커*/
   margin-top: 20px;
 }
 
-nav ul li a {
+nav ul li a { /*만약 메뉴를 추가할 시, gap이나 padding 조정*/
   display: inline-block; 
   background-color: white;
   color: #6a5acd;
@@ -47,9 +47,10 @@ nav ul li a:hover { /*마우스를 올렸을 때*/
 main {
   padding: 30px; /*안쪽여백*/
   background-color: white;
-  max-width: 800px; /*최대넓이*/
+  max-width: 800px; /*최대넓이, 만약 콘텐츠 양이 많아지면 더더 키워야 함*/
   margin: 0px auto; 
-  font-size: 20px; /*약간 키움움*/
+  font-size: 20px; /*약간 키움*/
+  padding-bottom: 80px;
 }
 
 main h2 { /*박예지 포트폴리오*/
@@ -98,10 +99,14 @@ ul, ol, details {
 }
 
 footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
   background-color: #6a5acd;
   color: white;
   text-align: center;
-  padding: 15px;
+  padding: 10px;
   margin-top: 30px;
   font-size: 14px;
 }
